@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{ 
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            width: 100vh;
+            background-color: rgb(5, 56, 151);
+            color: white;
+            
+        }
+        p,div{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    <h1>Iniciando estudos com DOM</h1>
+
+    </header>
+    <main>
+
+    <p class="ss">Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">clique em mim</div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+
+    <script>
+        //Selecionando por Marca
+        /*
+        var corpo = document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Esta escrito assim: ' + p1.innerText)
+        p1.style.color = 'red' 
+        corpo.style.backgroundColor = 'black'
+        */
+
+        //Selecionando por Id
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.color = 'green'
+        */
+        //abreviado com variavel
+        //d.innerText = 'mudei o texto'
+
+        /*//caminho inteiro escrevendo tudo
+
+        window.document.getElementById('msg').innerText = ' mudei o texto 2'
+
+        */
+        /*OBS: id , name , class tem o mesmo principio so muda um pouco os comandos By (Id/Class/Name)*/
+        
+        //Usando querySelector
+       
+       /* 
+       var d = window.document.querySelector('div#msg')
+       d.style.backgroundColor = 'pink'
+       */
+
+        
+
+
+    </script>
+    <script>
+        window.document.body.style.backgroundColor = 'red'
+        document.body.getElementsByTagName('h1')[0].innerHTML = 'ola test teste'
+        document.getElementById('msg').style.fontSize = '20px'
+
+        window.document.querySelector('p.ss').innerText = 'Verdadeiro'
+    </script>
+</body>
+</html>
