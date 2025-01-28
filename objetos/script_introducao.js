@@ -1,5 +1,5 @@
 // Introdução ao objeto
-// Podemos pensar em um obbjeto como um array porem voce tem que nomear os indices agora chamados de propriedades.
+// Podemos pensar em um objeto como um array porem voce tem que nomear os indices agora chamados de propriedades.
 
 // Um objeto e declarado entre chaves e seus elementos sao chamados de propriedades
 

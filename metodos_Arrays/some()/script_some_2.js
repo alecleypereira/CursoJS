@@ -5,4 +5,7 @@ const team = [
     {id:122 , name:'Kowalski' , pilot:false}
 ]
 // verificar se tem pilotos na equipe
-console.log( team.some((person) => person.pilot == true ))
+console.log( team.some((person) => {
+    return person.pilot == true 
+    } 
+    ) )

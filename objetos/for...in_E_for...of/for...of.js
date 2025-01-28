@@ -5,7 +5,7 @@
 
 let nomes = ['Alecley', 'Marcos', 'vitor', 'Joao']
 
-for (valor of nomes){
+for (let valor of nomes){
     console.log(valor)
 }
 
@@ -13,8 +13,10 @@ for (valor of nomes){
 
 const letras = 'Mouse sem fio X'
 
-for(valor of letras){
+for(let valor of letras){
     console.log(valor)
-    // o for of passa por cada localizacao de largura da string e considera cada uma um valor e escreve de um por um.
+    // o for of passa por cada localizacao de largura da string e considera cada uma um valor, e com console.log escreve de um por um.
 }
+
+ 
 

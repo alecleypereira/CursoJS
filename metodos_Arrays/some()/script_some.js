@@ -1,12 +1,13 @@
-const numeros = [6, 8, 14, 42, 11 ]
+const numeros = [10, 14, 8,]
 // ver se um valor é primo ou não
 function Eprimo (valor) {
-    for(let c = 2 ; c < valor ; c++){
+    let acumulador
+    for(let c = valor - 1 ; c > 1 ; c--){
         if (valor % c == 0) {
             return false
         }
-        return true
     }
+    return true
 }
 let Verifica = numeros.some(Eprimo)
 console.log(Verifica)

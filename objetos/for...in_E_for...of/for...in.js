@@ -4,7 +4,12 @@
 
 let pessoa = {nome:'Rosangela', idade:33}
 
-for (chave in pessoa){
-    console.log(chave + ': ' + pessoa[chave]) // Para acessar a propriedade n se usa ponto nesse caso se usa colchetes.
+for (let chave in pessoa){
+    //console.log(chave + ': ' + pessoa[chave]) // Para acessar a propriedade n se usa ponto nesse caso se usa colchetes.
 }
 // a palavra chave é configuravel, apenas a o nome do objeto não.
+
+
+for(let ano in pessoa){
+    console.log(pessoa[ano])
+}
